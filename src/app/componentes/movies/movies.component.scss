@@ -1,0 +1,44 @@
+.margen{
+    border-radius: 5px;
+    background: rgba(98, 98, 240, 0.397);
+    padding: 2px;
+    box-shadow: 1px 2px 3px gray;
+    
+}
+
+.description{
+    position: absolute;
+    z-index: 100;
+    background: transparent;
+    cursor: pointer;
+    color: transparent;
+    text-align: justify;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    padding: 40px;
+    overflow: auto;
+}
+
+
+.description:hover{
+    color: white;
+    background: rgba(0, 0, 0, 0.418)
+}
+
+.col-md-1{
+    padding: 0;
+    margin: 0;
+}
+label{
+    font-size: 11px;
+    margin-left: 2px
+}
+
+.generos{
+    background: black;
+    color: white;
+    padding: 5px;
+    box-shadow: 2px 3px 4px;
+    margin-bottom: 40px
+}

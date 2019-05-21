@@ -1,0 +1,19 @@
+<div class="container-fluid">
+  <div class="row generos">
+    <div *ngFor="let genero of generos" class="col-md-1">
+      
+      <label  for="{{genero.id}}"><input (change)="selected($event,genero)" type="checkbox" name="genero.name" id="{{genero.id}}"> {{genero.name}}</label>
+    </div>
+  </div>
+  <div class="row">
+    <div *ngFor="let movie of everyData" class="col-md-3">
+      <div class="description">
+        <p>{{movie.overview}}</p>
+        <button style="position: absolute;bottom: 3px;left: 0¿3px" type="button" (click)="vireMOre(movie)" class="btn btn-outline-primary">View more...</button>
+      </div>
+      <div class="margen text-center">
+        <img title="{{movie.original_title}}" src="{{urlImg}}{{movie.poster_path}}" alt="">
+      </div>
+
+    </div>
+  </div>
